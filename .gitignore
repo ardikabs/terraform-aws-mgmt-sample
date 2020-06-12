@@ -8,6 +8,9 @@
 # auto.tfvars files
 *.auto.tfvars
 
+# Terragrunt files
+**/.terragrunt*
+
 .idea/
 
 *DS_Store
