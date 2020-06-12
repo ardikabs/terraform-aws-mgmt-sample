@@ -1,1 +1,1 @@
-business_unit = "RETAIL"
+business_unit = "Retail"

@@ -1,2 +1,0 @@
-environment = "production"
-product     = "utility"

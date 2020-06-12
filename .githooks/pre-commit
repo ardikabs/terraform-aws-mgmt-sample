@@ -5,8 +5,8 @@ set -e
 files=$(git diff --diff-filter=d --cached --name-only)
 for f in $files
 do
-  if [ -e "$f" ] && [[ "$f" == *.tf ]]; then
-    terraform fmt $f
+  if [ -e "$f" ] && [[ "$f" == *.tf || "$f" == *.tfvars ]]; then
+    which terraform > /dev/null 2&>1 && terraform fmt $f
     git add $f
   fi
 done

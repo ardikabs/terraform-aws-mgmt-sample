@@ -1,1 +1,0 @@
-business_unit = "FINTECH"
